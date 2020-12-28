@@ -1,8 +1,9 @@
-#UptimeRobot Directions
+**UptimeRobot Directions**
 
 This directory includes the source code and the compiled .mez file for use with Power BI.
 
 **Source Code**
+
 To view the source code, navigate to the [UptimeRobotSolution](https://github.com/macfound/Power-BI-Data-Connectors/tree/main/UptimeRobot/UptimeRobotSolution folder.
 The sln file can be opened in Visual Studio, edited, and re-compiled.
 
