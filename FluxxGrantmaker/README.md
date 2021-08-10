@@ -1,16 +1,16 @@
-**UptimeRobot Directions**
+**Fluxx Grantmaker Directions**
 
 This directory includes the source code and the compiled .mez file for use with Power BI.
 
 **Source Code**
 
-To view the source code, navigate to the [UptimeRobotSolution](https://github.com/macfound/Power-BI-Data-Connectors/tree/main/UptimeRobot/UptimeRobotSolution) folder.
+To view the source code, navigate to the [FluxxSolution](https://github.com/macfound/Power-BI-Data-Connectors/tree/main/FluxxGrantmaker/FluxxSolution) folder.
 The sln file can be opened in Visual Studio, edited, and re-compiled.
 
 **Compiled Data Connector**
 
-To use the UptimeRobot data connector as is, follow these steps:
-1. Download the UptimeRobot.mez file
+To use the Fluxx data connector as is, follow these steps:
+1. Download the Fluxx.mez file
 2. Copy the file to the Custom Connectors folder for Power BI (e.g. "C:\Users\UserName\Documents\Power BI Desktop\Custom Connectors")
 3. Open Power BI.
 4. Navigate to File -> Options & Settings
@@ -20,6 +20,6 @@ To use the UptimeRobot data connector as is, follow these steps:
 
 After completing these steps, you should now be able to find the data connector in the list of connectors when using "Get Data"
 1. Select "Get Data"
-2. Seach for UptimeRobot or navigate to "Online Services" and choose "UptimeRobot (Beta)"
+2. Seach for Fluxx or navigate to "Online Services" and choose "Fluxx (Beta)"
 3. Enter the API Key when prompted
-4. The Navigator will provide you with 6 tables of data that can be downloaded.
+4. The Navigator will provide you with a list of all core tables of data that can be downloaded.

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4DF76451-A46A-4C0B-BE03-459FAAFA07E6}") = "Fluxx", "Fluxx\Fluxx.mproj", "{F897D15A-F585-44F0-A483-8728CA0E4274}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F897D15A-F585-44F0-A483-8728CA0E4274}.Debug|x86.ActiveCfg = Debug|x86
+		{F897D15A-F585-44F0-A483-8728CA0E4274}.Debug|x86.Build.0 = Debug|x86
+		{F897D15A-F585-44F0-A483-8728CA0E4274}.Release|x86.ActiveCfg = Release|x86
+		{F897D15A-F585-44F0-A483-8728CA0E4274}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70DEDC42-3C80-4099-A5BC-7D133DC7A293}
+	EndGlobalSection
+EndGlobal
