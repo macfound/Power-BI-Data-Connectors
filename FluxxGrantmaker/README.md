@@ -21,5 +21,6 @@ To use the Fluxx data connector as is, follow these steps:
 After completing these steps, you should now be able to find the data connector in the list of connectors when using "Get Data"
 1. Select "Get Data"
 2. Seach for Fluxx or navigate to "Online Services" and choose "Fluxx (Beta)"
-3. Enter the API Key when prompted
-4. The Navigator will provide you with a list of all core tables of data that can be downloaded.
+3. Enter the API Key and Secret when prompted
+4. Enter the url of your tenant (e.g. testing.fluxx.io)
+5. The Navigator will provide you with a list of all core tables of data that can be downloaded.
