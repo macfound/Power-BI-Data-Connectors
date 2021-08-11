@@ -4,3 +4,4 @@ This repository contains Power BI Data Connectors that can be used to pull data 
 
 **Available Data Connectors**
 * [UptimeRobot](https://uptimerobot.com/) - An uptime monitoring service.
+* [Fluxx](https://fluxx.io) - Grants Management software.
