@@ -59,7 +59,7 @@ If we only wanted the ID, Name, annd Country Code for organizations, the paramet
 
 **EXAMPLE 2**
 
-We want the same columns for organizations, but we also only want the ID and grant_agreement_att fields for the grant_request model. The parameter would look like this:
+We want the same columns for organizations, but we also only want the ID and grant_agreement_at fields for the grant_request model. The parameter would look like this:
 ```
 [organization="{""id"",""name"",""country_code""}",grant_request="{""id"",""grant_agreement_at""}"]
 ```
@@ -77,7 +77,7 @@ In this example, we want to just get a list of organizations within Australia.
 
 **EXAMPLE 2**
 
-We want the same organizaitons from Australia, but we also want any grant_request records with a grant_agreement_date wihin the past two quarters.
+We want the same organizaitons from Australia, but we also want any grant_request records with a grant_agreement_date within the past two quarters.
 ```
 [organization="filter={""group_type"":""and"",""conditions"":[[""country_code"",""eq"",""AU""]]}",grant_request="filter={""group_type"":""and"",""conditions"":[[""grant_agreement_date"",""last-n-quarters"",""2""]]}"]
 ```
