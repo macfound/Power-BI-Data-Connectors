@@ -297,6 +297,7 @@ getPage = (url, model, page, optional token, optional filters) =>
 getPages = (url, model, optional columns, optional filters) =>
     let
         auth = GenerateAuthenticationToken(url),
+        objName = if(Text.Contains(Text.Lower(model),"mac_model_type_dyn_") = true) then "machine_model" else model,
         token = auth[access_token],
         current = DateTime.LocalNow(),
         expires = current + #duration(0,0,0,auth[expires_in]),
@@ -317,9 +318,9 @@ getPages = (url, model, optional columns, optional filters) =>
             ), each _ <> null),
         #"ResultsTableRaw" = Table.FromList(pages, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
         #"ResultsTableExpanded" = try Table.ExpandRecordColumn(#"ResultsTableRaw", "Column1", Record.FieldNames(Table.Column(#"ResultsTableRaw", "Column1"){0})) otherwise #"ResultsTableRaw",
-        #"ExpandedTable" = try Table.ExpandListColumn(#"ResultsTableExpanded", model) otherwise #"ResultsTableExpanded",
-        cols = if(columnList <> null) then columnList else Record.FieldNames(Table.Column(#"ExpandedTable", model){0}),
-        #"ExpandedColumn" = try Table.ExpandRecordColumn(#"ExpandedTable", model, cols) otherwise #table({"No Records Found"},{})
+        #"ExpandedTable" = try Table.ExpandListColumn(#"ResultsTableExpanded", objName) otherwise #"ResultsTableExpanded",
+        cols = if(columnList <> null) then columnList else Record.FieldNames(Table.Column(#"ExpandedTable", objName){0}),
+        #"ExpandedColumn" = try Table.ExpandRecordColumn(#"ExpandedTable", objName, cols) otherwise #table({"No Records Found"},{})
     in
         #"ExpandedColumn";
 
