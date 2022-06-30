@@ -18,7 +18,7 @@ To use the Fluxx data connector as is, follow these steps:
 4. Navigate to File -> Options & Settings
 5. Select Options
 6. Choose "Security" under the Global grouping
-7. Under "Data Extensions" be sure that "(Not Recommended) Allow any extension to load without validation or warning"
+7. Under "Data Extensions", select the option for "(Not Recommended) Allow any extension to load without validation or warning"
 
 After completing these steps, you should now be able to find the data connector in the list of connectors when using "Get Data"
 1. Select "Get Data"
@@ -33,6 +33,15 @@ After completing these steps, you should now be able to find the data connector 
 
 5. The Navigator will provide you with a list of all core tables of data that can be downloaded.
 ![ShowTables](https://user-images.githubusercontent.com/9000285/129103216-6ef864f7-2cd8-407c-9407-4de1a715a42b.PNG)
+
+**NOTE**
+The models available in the connector are only the core models. If you require data from dynamic models, you can edit the connector to add the models you require using the following steps:
+* Download the Fluxx.mez file
+* Rename the file to Fluxx.zip
+* Open the Fluxx.m file with Notepad
+* Starting on line 34 of the Fluxx.m file is a list of all of the core models. Add your custom models to this list.
+* Add your dynamic models and save the file
+* Rename the Fluxx.zip to Fluxx.mez
 
 ## Defining Columns and Filters ##
 
